@@ -6,15 +6,20 @@ authors = [
     {name = "Konstantin Losev",email = "losev.konstantin6@wb.ru"}
 ]
 readme = "README.md"
-requires-python = ">=3.10,<3.13"
+requires-python = ">=3.10,<3.12"
 dependencies = [
     "label-studio (>=1.20.0,<2.0.0)",
     "ultralytics (>=8.3.203,<9.0.0)",
     "model-compression-toolkit (>=2.4.2,<3.0.0)",
-    "imx500-converter[pt] (>=3.17.3,<4.0.0)"
+    "imx500-converter[pt] (>=3.17.3,<4.0.0)",
+    "edge-mdt-tpc (>=1.2.0,<2.0.0)",
+    "sony-custom-layers (>=0.3.0,<0.4.0)"
 ]
 
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+package-mode = false
